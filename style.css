@@ -17,10 +17,14 @@ img {
 
 body {
   font-family: "Montserrat", sans-serif;
-  /* font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal; */
 }
+
+header {
+    font-weight: 600;
+    font-style: normal;
+}
+
+
 
 /* ----------------
     GENERAL
@@ -30,16 +34,9 @@ body {
     display: flex;
 }
 
-.container {
-    padding: 20px;
-}
-
-
-
 /*-------------------
     UTILITY
 --------------------*/
-
 .height-90 {
     height: 90px;
 }
@@ -60,14 +57,46 @@ body {
     background-color: #282828;
 }
 
+.text-grey {
+    color: grey;
+}
+
 .text-white {
     color: white;
+}
+
+.flow-10 > *:not(:first-child) {
+    margin-top: 10px;
+}
+
+.flow-20 > *:not(:first-child) {
+    margin-top: 20px;
+}
+
+.flow-30 > *:not(:first-child) {
+    margin-top: 30px;
 }
 
 /* ----------------
     BUTTONS
 -----------------*/
 
+.btn-square {
+    border: none;    
+    background-color: gray;
+    color: black;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 12px 34px;
+    color: white;
+    font-weight: 600;
+    font-size: 11px;
+}
 
 
 /* ----------------
@@ -76,8 +105,83 @@ body {
 header {
     width: calc(100% / 6);
     height: calc(100vh - 90px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
+header > * {
+    padding-left: 20px;
+}
+
+.logo {
+    max-width: 70%;
+    padding-top: 20px;
+}
+
+.nav-list {
+    font-size: small;
+    list-style: none;
+    line-height: 2.5;
+}
+
+.nav-list img {
+    width: 34px;
+    filter: invert(50%);
+    padding-right: 8px;
+}
+
+.nav-list li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.second-nav {
+    overflow-y: auto;
+}
+
+.second-nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.second-nav button {
+    margin-right: 8px;
+}
+
+.second-nav .btn-square i {
+    font-size: 18px;
+}
+
+.header-bottom div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.unistall {
+    width: 90%;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+.unistall img {
+    width: 18px;
+    filter: invert(50%);
+    margin-right: 8px;
+}
+
+.profile img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: gray;
+    object-fit: fill;
+}
 
 /* ----------------
     MAIN
@@ -89,10 +193,15 @@ main {
 /* -------TOP MAIN---------*/
 
 .top-main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(8, 11, 18, 50);
     position: sticky;
     z-index: 20;
-
+    padding: 20px;
 }
+
 
 /* -------BOTTOM MAIN---------*/
 
@@ -116,10 +225,16 @@ main {
     RESPONSIVE
 -----------------*/
 
-@media screen and (max-width: 1100px) {}
+@media screen and (max-width: 1100px) {
+
+}
 
 
-@media screen and (max-width: 700px) {}
+@media screen and (max-width: 700px) {
+
+}
 
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+
+}
