@@ -86,6 +86,7 @@ header {
     background-color: gray;
     color: black;
     padding: 10px;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -96,6 +97,13 @@ header {
     color: white;
     font-weight: 600;
     font-size: 11px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    font-size: 14px;
+    padding: 14px 36px;
+    transition: 0.2s;
 }
 
 
@@ -152,10 +160,12 @@ header > * {
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
 }
 
 .second-nav button {
     margin-right: 8px;
+    cursor: pointer;
 }
 
 .second-nav .btn-square i {
