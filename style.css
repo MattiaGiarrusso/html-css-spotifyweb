@@ -11,9 +11,115 @@ img {
     max-width: 100%;
 }
 
+/* ----------------
+    TYPOGRAPHY
+-----------------*/
+
 body {
   font-family: "Montserrat", sans-serif;
   /* font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal; */
 }
+
+/* ----------------
+    GENERAL
+-----------------*/
+
+.big-container {
+    display: flex;
+}
+
+.container {
+    padding: 20px;
+}
+
+
+
+/*-------------------
+    UTILITY
+--------------------*/
+
+.height-90 {
+    height: 90px;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-lightblack {
+    background-color: #080B12;
+}
+
+.bg-darkblue {
+    background-color: #141922;
+}
+
+.bg-gray {
+    background-color: #282828;
+}
+
+.text-white {
+    color: white;
+}
+
+/* ----------------
+    BUTTONS
+-----------------*/
+
+
+
+/* ----------------
+    HEADER
+-----------------*/
+header {
+    width: calc(100% / 6);
+    height: calc(100vh - 90px);
+}
+
+
+/* ----------------
+    MAIN
+-----------------*/
+main {
+    width: 100%;
+}
+
+/* -------TOP MAIN---------*/
+
+.top-main {
+    position: sticky;
+    z-index: 20;
+
+}
+
+/* -------BOTTOM MAIN---------*/
+
+.bottom-main {
+    height: 100%;    
+}
+
+
+/* ----------------
+    FOOTER
+-----------------*/
+ footer {
+    width: 100%;
+    position: sticky;
+    z-index: 30;
+ }
+
+
+
+/* ----------------
+    RESPONSIVE
+-----------------*/
+
+@media screen and (max-width: 1100px) {}
+
+
+@media screen and (max-width: 700px) {}
+
+
+@media screen and (max-width: 600px) {}
