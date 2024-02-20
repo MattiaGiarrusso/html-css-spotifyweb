@@ -24,14 +24,13 @@ header {
     font-style: normal;
 }
 
-
-
 /* ----------------
     GENERAL
 -----------------*/
 
 .big-container {
     display: flex;
+    height: calc(100vh - 90px);
 }
 
 /*-------------------
@@ -106,15 +105,13 @@ header {
     transition: 0.2s;
 }
 
-
 /* ----------------
     HEADER
 -----------------*/
 header {
-    width: calc(100% / 6);
-    height: calc(100vh - 90px);
+    width: 300px;
+    flex-shrink: 0;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -123,8 +120,11 @@ header > * {
 }
 
 .logo {
-    max-width: 70%;
     padding-top: 20px;
+}
+
+.logo img {
+    max-width: 60%;
 }
 
 .nav-list {
@@ -141,59 +141,70 @@ header > * {
 
 .nav-list li {
     display: flex;
-    flex-direction: row;
     align-items: center;
     cursor: pointer;
     margin-left: -15px;
     padding-left: 15px;
 }
 
+/* -------FIRST NAV---------*/
+
 .first-nav li:active {
     color: white;
     border-left: 2px solid greenyellow;
 }
 
-.second-nav {
-    min-height: 330px;
-    overflow-y: auto;
+/* -------CREATE PLAYLIST---------*/
+
+.create-playlist span {
+    padding-left: 8px;
 }
 
-.second-nav div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-}
-
-.second-nav button {
-    margin-right: 8px;
-    cursor: pointer;
-}
-
-.second-nav .btn-square i {
+.create-playlist .btn-square i {
     font-size: 18px;
 }
 
-.header-bottom div {
+.create-playlist button {
+    cursor: pointer;
+}
+
+/* -------SECOND NAV---------*/
+
+.second-nav {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.second-nav li {
+    cursor: pointer;
+}
+
+/* -------THIRD NAV---------*/
+
+.third-nav {
+    margin-top: auto;
+}
+
+.third-nav div {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px 0px;
 }
 
-.unistall {
+.third-nav .unistall {
     width: 90%;
     border-bottom: 1px solid gray;
     padding-bottom: 10px;
 }
 
-.unistall img {
+.third-nav .unistall img {
     width: 18px;
     filter: invert(50%);
     margin-right: 8px;
 }
 
-.profile img {
+.third-nav .profile img {
     width: 20px;
     height: 20px;
     margin-right: 8px;
@@ -216,8 +227,8 @@ main {
     justify-content: flex-end;
     align-items: center;
     background-color: rgba(8, 11, 18, 50);
+    margin-bottom: auto;
     position: sticky;
-    z-index: 20;
     padding: 20px;
 }
 
@@ -225,9 +236,9 @@ main {
 /* -------BOTTOM MAIN---------*/
 
 .bottom-main {
-    height: 100%;    
+    height: 100%;
+    overflow-y: auto;
 }
-
 
 /* ----------------
     FOOTER
@@ -238,13 +249,11 @@ main {
     z-index: 30;
  }
 
-
-
 /* ----------------
     RESPONSIVE
 -----------------*/
 
-@media screen and (max-width: 1100px) {
+/* @media screen and (max-width: 1100px) {
 
 }
 
@@ -256,4 +265,4 @@ main {
 
 @media screen and (max-width: 600px) {
 
-}
+} */
