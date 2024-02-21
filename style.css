@@ -27,6 +27,7 @@ main::-webkit-scrollbar-track {
   /* Handle */
 main::-webkit-scrollbar-thumb {
     background-color: gray;
+    border-radius: 10px;
   }
 
 
@@ -44,6 +45,7 @@ main::-webkit-scrollbar-thumb {
   /* Handle */
 .second-nav::-webkit-scrollbar-thumb {
     background-color: gray;
+    border-radius: 10px;
 
   }
 
