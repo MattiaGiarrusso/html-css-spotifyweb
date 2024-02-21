@@ -14,7 +14,6 @@ img {
 /* ----------------
   CUSTOM SCROLLBAR
 -----------------*/
-
 /* width */
 main::-webkit-scrollbar {
     width: auto;
@@ -48,12 +47,9 @@ main::-webkit-scrollbar-thumb {
 
   }
 
-
-
 /* ----------------
     TYPOGRAPHY
 -----------------*/
-
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -66,7 +62,6 @@ header {
 /* ----------------
     GENERAL
 -----------------*/
-
 .big-container {
     display: flex;
     height: calc(100vh - 90px);
@@ -373,7 +368,6 @@ main {
 ----------------------*/
 
 /* ---- ROW TOP -------*/
-
 .row-top {
     display: flex;
     flex-wrap: wrap;
@@ -475,7 +469,6 @@ main {
  }
 
  /* ---- BOX SONG -------*/
-
  .box-song {
     display: flex;
     justify-content: space-between;
@@ -495,7 +488,6 @@ main {
  }
 
  /* ---- BOX TIMELINE -------*/
-
  .box-timeline {
     display: flex;
     flex-direction: column;
@@ -544,7 +536,6 @@ main {
 }
 
  /* ---- BOX VOLUME -------*/
-
 .box-volume {
     display: flex;
     justify-content: flex-end;
