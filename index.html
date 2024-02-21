@@ -15,29 +15,40 @@
     <link rel="stylesheet" href="style.css">
     </head>
 <body>
+    <!---------- THE HEADER AND MAIN'S CONTAINER ----------------->
     <div class="big-container">
 
-        <header class="bg-black text-grey flow-20">
-
+        <!---------- HEADER ----------------->
+        <header class="bg-black text-grey">
+            <!---------- LOGO ----------------->
             <div class="logo">
                     <img src="./img/logo.svg" alt="logo">
             </div>
-
+            <!---------- FIRST NAV ----------------->
             <nav class="first-nav">
                     <ul class="nav-list">
-                        <li><img src="/img/home.svg" alt="home"></i>Home</li>
-                        <li><img src="./img/search.svg" alt="search">Cerca</li>
-                        <li><img src="./img/libreria.svg" alt="library">La tua libreria</li>
+                        <li>
+                            <img class="home-white" src="/img/home.svg" alt="home"></i>
+                            <a class="text-white" href="">Home</a>
+                        </li>
+                        <li>
+                            <img src="./img/search.svg" alt="search">
+                            <a href="">Cerca</a>
+                        </li>
+                        <li>
+                            <img src="./img/libreria.svg" alt="library">
+                            <a href="">La tua libreria</a>
+                        </li>
                     </ul>
             </nav>
-                
+            <!---------- CREATE PLAYLIST ----------------->   
             <div class="create-playlist flow-10">
                 <h4 class="text-white">PLAYLIST</h4>
                 <div>
                     <button class="btn-square"><i class="fa-solid fa-plus"></i></button><span>Crea Playlist</span>
                 </div>
             </div>
-
+            <!---------- SECOND NAV ----------------->
             <nav class="second-nav flow-10">                    
                 <ul class="nav-list">
                     <li>Nome Playlist</li>
@@ -48,10 +59,10 @@
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
                 </ul>
-            </nav>                                
-                            
+            </nav>
+            <!---------- THIRD NAV ----------------->                           
             <div class="third-nav">
-                    <div class="unistall">
+                    <div class="install">
                         <img src="./img/download.svg" alt=""><small>Installa App</small>
                     </div>
     
@@ -61,19 +72,218 @@
             </div>
 
         </header>
+        <!---------- /HEADER ----------------->  
+        
+        <!---------- MAIN ----------------->        
+        <main class="bg-darkblue text-white"> 
 
-        <main>  
+            <!---------- TOP MAIN ----------------->  
             <div class="top-main height-90 bg-lightblack text-white">
                 <button class="btn-primary">EFFETTUA L'UPGRADE</button>              
             </div>
+            
+            <!---------- MAIN CONTAINER ----------------->  
+            <div class="main-container flow-30">
+                <!---------- ROW TOP ----------------->
+                <div class="row-top text-grey">
+                    <ul>
+                        <li>
+                            <a class="text-white" href="#">IN EVIDENZA</a>
+                            <div class="border-link"></div>
+                        </li>
+                        <li>
+                            <a class="text-grey" href="#">PODCAST</a>
+                        </li>
+                        <li>
+                            <a class="text-grey" href="#">CLASSIFICHE</a>
+                        </li>
+                        <li>
+                            <a class="text-grey" href="#">GENERI E MOOD</a>
+                        </li>
+                        <li>
+                            <a class="text-grey" href="#">NUOVE USCITE</a>
+                        </li>
+                        <li>
+                            <a class="text-grey" href="#">SCOPRI</a>
+                        </li>
+                    </ul>
+                </div>
+                <!---------- FIRST ROW ----------------->
+                <div class="row text-white flow-20 flow-40">
+                    <h2>Riprodotti di recente</h2>
 
-            <div class="bottom-main bg-darkblue text-white">                
-            </div>      
+                    <div class="col">
+
+                        <div class="card flow-10">
+                            <img src="./img/metal_lifting.jpg" alt="metal_lifting">
+                            <figcaption>Heavy Metal</figcaption>
+                            <figcaption class="text-grey"><small>Subtitle</small></figcaption>                        
+                        </div>
+
+                        <div class="card flow-10">
+                            <img src="./img/stranger.jpeg" alt="stranger">
+                            <figcaption>Heavy Metal</figcaption>
+                            <figcaption class="text-grey"><small>Subtitle</small></figcaption>                        
+                        </div>
+
+                        <div class="card flow-10">
+                            <img src="./img/aquietplace.jpeg" alt="aquietplace">
+                            <figcaption>Heavy Metal</figcaption>
+                            <figcaption class="text-grey"><small>Subtitle</small></figcaption>                        
+                        </div>
+
+                        <div class="card flow-10">
+                            <img src="./img/split.jpeg" alt="split">
+                            <figcaption>Heavy Metal</figcaption>
+                            <figcaption class="text-grey"><small>Subtitle</small></figcaption>                        
+                        </div>
+
+                        <div class="card flow-10">
+                            <img src="./img/cure.jpeg" alt="cure">
+                            <figcaption>Heavy Metal</figcaption>
+                            <figcaption class="text-grey"><small>Subtitle</small></figcaption>                        
+                        </div>
+
+                        <div class="card flow-10">
+                            <img src="./img/sinister.jpeg" alt="sinister">
+                            <figcaption>Heavy Metal</figcaption>
+                            <figcaption class="text-grey"><small>Subtitle</small></figcaption>                        
+                        </div>
+
+                    </div>
+                </div>
+                <!---------- SECOND ROW ----------------->
+                <div class="row text-white flow-20 flow-40">
+
+                    <h2>Creato per John Doe</h2>
+                    <h4 class="text-grey">Più ascolti, più saranno accurati i suggerimenti</h4>
+                    
+                    <div class="col">
+
+                        <div class="card flow-10">
+                            <img src="./img/radar.jpeg" alt="radar">
+                            <figcaption>Release Radar</figcaption>                       
+                        </div>
+
+                        <div class="card flow-10">
+                            <img src="./img/mixdaily.jpeg" alt="mixdaily">
+                            <figcaption>Daily Mix</figcaption>                       
+                        </div>
+                    
+                    </div>
+
+                </div>
+                <!---------- THIRD ROW ----------------->
+                <div class="row text-white flow-20 flow-40">
+                    
+                    <h2>Artisti più popolari</h2>
+                    <h4 class="text-grey">Più ascolti, più saranno accurati i suggerimenti</h4>
+                    
+                    <div class="col">
+
+                        <div class="card flow-10">
+                            <img class="circle-img" src="./img/youg.jpeg" alt="youg">
+                            <figcaption>Lana Del Rey</figcaption>                       
+                        </div>
+
+                        <div class="card flow-10">
+                            <img class="circle-img" src="./img/einaudi.jpeg" alt="einaudi">
+                            <figcaption>Ludovico Einaudi</figcaption>                       
+                        </div>
+                    
+                    </div>
+
+                </div>                
+
+            </div>
+            <!---------- /MAIN CONTAINER ----------------->
+
         </main>
+        <!---------- /MAIN ----------------->  
 
-    </div>    
+    </div>
+    <!----------/THE HEADER AND MAIN'S CONTAINER----------------->   
 
-    <footer class="bg-gray height-90">      
+    <footer class="bg-gray height-90">
+
+        <div class="box-song">
+
+            <div class="song-icon">
+                <img src="./img/sinister.jpeg" alt="sinister.mini">
+                <figcaption>
+                    <span class="text-white">Sinister</span>
+                    <span class="text-grey"><small>Brano Nome</small></span>
+                </figcaption>
+            </div>
+
+            <div class="button-song">
+                <button class="btn btn-song"><i class="fa-regular fa-heart"></i></button>
+                <button class="btn btn-song"><i class="fa-regular fa-folder"></i></button>
+            </div>
+
+        </div>
+
+        <div class="box-timeline">
+
+            <div class="button-media">
+                <button class="btn btn-media"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="btn btn-media"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="btn btn-media btn-play" onclick="move()"><i class="fa-regular fa-circle-play"></i></button>
+                <button class="btn btn-media"><i class="fa-solid fa-forward-step"></i></button>
+                <button class="btn btn-media"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+            
+            <div class="bottom-media">
+                <small class="text-white">0:25</small>
+                <div class="bar-play">
+                    <div class="my-progress">
+                        <div id="my-bar"></div>
+                    </div>
+                
+                    <script>
+                    var i = 0;
+                    function move() {
+                        if (i == 0) {
+                            i = 1;
+                            var elem = document.getElementById("my-bar");
+                            var width = 10;
+                            var id = setInterval(frame, 10);
+                            function frame() {
+                                if (width >= 100) {
+                                    clearInterval(id);
+                            i = 0;
+                          } else {
+                            width++;
+                            elem.style.width = width + "%";
+                            elem.innerHTML = width  + "%";
+                        }
+                    }
+                }
+            }
+                    </script>
+                </div>
+                <small class="text-white">4:35</small>
+            </div>
+
+        </div>
+
+        <div class="box-volume">
+
+            <div class="volume-button">
+                <button class="btn"><i class="fa-solid fa-list text-white"></i></button>
+                <button class="btn"><i class="fa-solid fa-display text-white"></i></button>
+                <button class="btn"><i class="fa-solid fa-volume-high text-white"></i></button>
+            </div>
+
+            <div class="volume-area">
+                <div class="volume-row">
+                    <div id="volume-bar"></div>
+                </div>
+            </div>
+
+        </div>
+
+
     </footer>
     
 </body>

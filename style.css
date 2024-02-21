@@ -76,10 +76,13 @@ header {
     margin-top: 30px;
 }
 
+.flow-40{
+    padding-top: 40px;
+}
+
 /* ----------------
     BUTTONS
 -----------------*/
-
 .btn-square {
     border: none;    
     background-color: gray;
@@ -105,6 +108,26 @@ header {
     transition: 0.2s;
 }
 
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-song {
+    color: gray;
+    font-size: 16px;
+}
+
+.btn-media {
+    color: white;
+    font-size: 22px;
+}
+
+.btn-play {
+    font-size: 30px;
+}
+
 /* ----------------
     HEADER
 -----------------*/
@@ -121,6 +144,7 @@ header > * {
 
 .logo {
     padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .logo img {
@@ -131,6 +155,10 @@ header > * {
     font-size: small;
     list-style: none;
     line-height: 2.5;
+}
+
+.nav-list a {
+    text-decoration: none;
 }
 
 .nav-list img {
@@ -149,12 +177,40 @@ header > * {
 
 /* -------FIRST NAV---------*/
 
-.first-nav li:active {
+.first-nav {
+    padding-bottom: 20px;
+}
+
+.first-nav a:not(.text-white) {
+    color: gray;
+}
+
+.first-nav .home-white {
+    filter: invert(0%);
+}
+
+.first-nav li:hover {
+    margin-left: -16px;
+    border-left: 4px solid greenyellow;
+}
+
+.first-nav li:hover img {
     color: white;
-    border-left: 2px solid greenyellow;
+    filter: invert(0%);
+}
+
+.first-nav li:hover a {
+    color: white;
 }
 
 /* -------CREATE PLAYLIST---------*/
+.create-playlist {
+    padding-bottom: 10px;
+}
+
+.create-playlist button, span {
+    cursor: pointer;
+}
 
 .create-playlist span {
     padding-left: 8px;
@@ -164,8 +220,12 @@ header > * {
     font-size: 18px;
 }
 
-.create-playlist button {
-    cursor: pointer;
+.create-playlist div:hover {
+    color: white;
+}
+
+.create-playlist button:hover {
+    background-color: white;
 }
 
 /* -------SECOND NAV---------*/
@@ -177,6 +237,10 @@ header > * {
 
 .second-nav li {
     cursor: pointer;
+}
+
+.second-nav li:hover {
+    color: white;
 }
 
 /* -------THIRD NAV---------*/
@@ -192,19 +256,36 @@ header > * {
     padding: 10px 0px;
 }
 
-.third-nav .unistall {
+.third-nav .install {
     width: 90%;
     border-bottom: 1px solid gray;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 
-.third-nav .unistall img {
+.third-nav .install img {
     width: 18px;
     filter: invert(50%);
-    margin-right: 8px;
 }
 
-.third-nav .profile img {
+.third-nav .install small {
+    padding-left: 8px;
+}
+
+.install *:hover {
+    color: white;
+    filter: invert(0%);
+}
+
+.install small:hover {
+    color: white;
+}
+
+.install img:hover {
+    filter: invert(0%);
+}
+
+.profile img {
     width: 20px;
     height: 20px;
     margin-right: 8px;
@@ -218,6 +299,11 @@ header > * {
 -----------------*/
 main {
     width: 100%;
+    overflow-y: auto;
+}
+
+.main-container {
+    padding: 20px;
 }
 
 /* -------TOP MAIN---------*/
@@ -226,28 +312,179 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgba(8, 11, 18, 50);
+    background-color: rgba(8, 11, 18, 0.5);
     margin-bottom: auto;
     position: sticky;
+    top: 0;
+    left: 0;
     padding: 20px;
 }
 
+/* ---------------------
+    MAIN CONTAINER
+----------------------*/
 
-/* -------BOTTOM MAIN---------*/
+/* ---- ROW TOP -------*/
 
-.bottom-main {
-    height: 100%;
-    overflow-y: auto;
+.row-top {
+    display: flex;
+    justify-content: center;
+}
+
+.row-top ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 600;
+    list-style: none;
+    gap: 20px;
+}
+
+.row-top li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-top a {
+    text-decoration: none;
+}
+
+.row-top a:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+.row-top div {
+    width: 40%;
+    border-bottom: 2px solid greenyellow;
+}
+
+/* ---- ROW MAIN -------*/
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col .card {
+    width: 200px;
+}
+
+.card figcaption {
+    text-align: center;
+    font-weight: 600;
+}
+
+.card .circle-img {
+    border-radius: 50%;
 }
 
 /* ----------------
     FOOTER
 -----------------*/
  footer {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     position: sticky;
+    bottom:0;
+    padding: 20px;
     z-index: 30;
  }
+
+ /* ---- BOX SONG -------*/
+
+ .box-song {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+ }
+
+ .box-song .song-icon, .button-song {
+    display: flex;
+    gap: 10px;
+ }
+
+ .box-song figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+ }
+
+ /* ---- BOX TIMELINE -------*/
+
+ .box-timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    text-align: center;
+ }
+
+.button-media button {
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;   
+}
+
+.bottom-media {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 4px;
+}
+
+.bar-play {
+    width: 100%;
+}
+
+.my-progress {
+    width: 100%;
+    background-color: #5A5A5A;
+  }
+  
+#my-bar {
+    width: 10%;
+    height: 5px;
+    background-color: #C1C1C1;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+ /* ---- BOX VOLUME -------*/
+
+.box-volume {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume-button {
+    display: flex;
+    gap: 20px;
+}
+
+.volume-area {
+    min-width: 100px;
+}
+
+.volume-row {
+    width: 100%;
+    background-color: #5A5A5A;
+  }
+
+#volume-bar {
+    width: 10%;
+    height: 5px;
+    background-color: #C1C1C1;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
 
 /* ----------------
     RESPONSIVE
