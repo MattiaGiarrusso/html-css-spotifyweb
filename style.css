@@ -320,7 +320,7 @@ header > * {
     padding-left: 8px;
 }
 
-.install *:hover {
+.install:hover {
     color: white;
     filter: invert(0%);
 }
@@ -455,8 +455,9 @@ main {
     font-weight: 600;
 }
 
-.card .circle-img {
+.circle-album {
     border-radius: 50%;
+    overflow: hidden;
 }
 
 /* ----------------
@@ -509,6 +510,14 @@ main {
     cursor: pointer;   
 }
 
+.button-media button:not(.btn-play):hover {
+    font-size: 24px;
+}
+
+.button-media .btn-play:hover {
+    color: greenyellow;
+}
+
 .bottom-media {
     display: flex;
     align-items: center;
@@ -546,6 +555,10 @@ main {
 .volume-button {
     display: flex;
     gap: 20px;
+}
+
+.volume-button button:hover {
+    color: white;
 }
 
 .volume-area {
