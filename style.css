@@ -188,6 +188,11 @@ header > * {
 
 .logo img {
     max-width: 60%;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(59%) saturate(598%) hue-rotate(86deg) brightness(95%) contrast(89%);
 }
 
 .logo img:last-child {
@@ -234,7 +239,7 @@ header > * {
 
 .first-nav li:hover {
     margin-left: -16px;
-    border-left: 4px solid greenyellow;
+    border-left: 4px solid #25D865;
 }
 
 .first-nav li:hover img {
@@ -360,6 +365,7 @@ main {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 3;
     padding: 20px;
 }
 
@@ -400,7 +406,7 @@ main {
 
 .row-top div {
     width: 40%;
-    border-bottom: 2px solid greenyellow;
+    border-bottom: 2px solid #25D865;
 }
 
 /* ---- ROW MAIN -------*/
@@ -507,7 +513,7 @@ main {
 }
 
 .button-media .btn-play:hover {
-    color: greenyellow;
+    color: #25D865;
 }
 
 .bottom-media {
@@ -600,6 +606,9 @@ main {
     .logo img:last-child {
         display: block;
         filter: invert(100%);
+    }
+    .logo img:last-child:hover {
+        filter: brightness(0) saturate(100%) invert(65%) sepia(59%) saturate(598%) hue-rotate(86deg) brightness(95%) contrast(89%);
     }
 
     .first-nav li {
