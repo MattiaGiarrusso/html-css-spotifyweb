@@ -12,6 +12,26 @@ img {
 }
 
 /* ----------------
+  CUSTOM SCROLLBAR
+-----------------*/
+
+/* width */
+html::-webkit-scrollbar {
+    width: auto;
+  }
+  
+  /* Track */
+html::-webkit-scrollbar-track {
+    background-color: #d90c0c;
+  }
+  
+  /* Handle */
+html::-webkit-scrollbar-thumb {
+    background-color: #888;
+  }
+
+
+/* ----------------
     TYPOGRAPHY
 -----------------*/
 
@@ -372,11 +392,11 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
 }
 
 .col .card {
     width: calc(100% / 6);
+    padding-right: 20px;
 }
 
 .card figcaption {
@@ -399,6 +419,7 @@ main {
     bottom:0;
     padding: 20px;
     z-index: 30;
+    overflow: hidden;
  }
 
  /* ---- BOX SONG -------*/
