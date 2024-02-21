@@ -16,19 +16,38 @@ img {
 -----------------*/
 
 /* width */
-html::-webkit-scrollbar {
+main::-webkit-scrollbar {
     width: auto;
   }
   
   /* Track */
-html::-webkit-scrollbar-track {
-    background-color: #d90c0c;
+main::-webkit-scrollbar-track {
+    background-color: #000000;
   }
   
   /* Handle */
-html::-webkit-scrollbar-thumb {
-    background-color: #888;
+main::-webkit-scrollbar-thumb {
+    background-color: gray;
   }
+
+
+  /* width */
+.second-nav::-webkit-scrollbar {
+    width: auto;
+  }
+  
+  /* Track */
+.second-nav::-webkit-scrollbar-track {
+    background-color: #000000;
+    border: none;
+  }
+  
+  /* Handle */
+.second-nav::-webkit-scrollbar-thumb {
+    background-color: gray;
+
+  }
+
 
 
 /* ----------------
@@ -174,6 +193,10 @@ header > * {
 
 .logo img {
     max-width: 60%;
+}
+
+.logo img:last-child {
+    display: none;
 }
 
 .nav-list {
@@ -538,13 +561,38 @@ main {
     header {
         width: 70px;
     }
+
+    .logo img:first-child {
+        display: none;
+    }
+
+    .logo img:last-child {
+        display: block;
+        filter: invert(100%);
+    }
+
+    .first-nav li {
+        margin-bottom: 10px;
+    }
+
     .first-nav a {
         display: none;
     }
+
     .create-playlist, .second-nav {
         display: none;
     }
+
+    .third-nav .install {
+        border-bottom: none;
+    }
+
     .third-nav span, small {
         display: none;
     }
+
+    .third-nav div {
+        text-align: center;
+    }
+
 }
