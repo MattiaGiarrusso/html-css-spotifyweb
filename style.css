@@ -119,6 +119,10 @@ header {
     font-size: 16px;
 }
 
+.btn-song:hover {
+    color: white;
+}
+
 .btn-media {
     color: white;
     font-size: 22px;
